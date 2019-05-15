@@ -1,6 +1,6 @@
 # frontend-development-basics
 
-frontend development is divided into two category and the first is an input to the next. As both requires different experties there will always be 2 teams.
+frontend development is divided into two category and the output of first is an input to the next. As both requires different experties there will always be 2 teams working in the items.
 
 * User Experience
 * User Interface
@@ -17,7 +17,7 @@ As an UI developer you need to know
 * javascript (js) - provides you with components to ecrich the behaviour
 
 #### html
-- The file name should be saved with extention wither .htm or .html
+- The file name should be saved with extention with .htm or .html
 - Though not mandatory but the page contant should be placed inside <body></body> element.````
 ```
 <html>
@@ -30,9 +30,11 @@ As an UI developer you need to know
 </html>
 ```
 
+### How to use Javascripts in html
+
 Javascripts can be used in html in 3 ways 
 * inline 
-* in header as functions 
+* As functions within the html file inside script block
 * as an external file
 
 The external file has the advantage of separating the concerns into different files, making the code modular and easy for extentios and reuse.
@@ -47,7 +49,7 @@ via inline
 </html>
 ```
 
-via function in header
+via function in header [Recommended to place it in header, but not technically mandated and hence can be placed in body as well]
 ```
 <html>
   <head>
@@ -86,6 +88,7 @@ myhtmlfile.html
 </html>
 ```
 
+## How to use CSS in html
 
 
 
