@@ -33,9 +33,9 @@ As an UI developer you need to know
 ### How to use Javascripts in html
 
 Javascripts can be used in html in 3 ways 
-* inline 
-* As functions within the html file inside script block
-* as an external file
+* Inline - by using the javascript in HTML elements 
+* Internal - As functions within the html file inside script block
+* External - as an external file
 
 The external file has the advantage of separating the concerns into different files, making the code modular and easy for extentios and reuse.
 
@@ -49,7 +49,7 @@ via inline
 </html>
 ```
 
-via function in header [Recommended to place it in header, but not technically mandated and hence can be placed in body as well]
+via Internal - Scripts in header [Recommended to place it in header, but not technically mandated and hence can be placed in body as well]
 ```
 <html>
   <head>
@@ -66,7 +66,7 @@ via function in header [Recommended to place it in header, but not technically m
 </html>
 ```
 
-via function in separate file
+via External
 myscripts.js
 ```
   function showName(){
