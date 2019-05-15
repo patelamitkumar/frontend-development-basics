@@ -29,3 +29,63 @@ As an UI developer you need to know
   </body>
 </html>
 ```
+
+Javascripts can be used in html in 3 ways 
+* inline 
+* in header as functions 
+* as an external file
+
+The external file has the advantage of separating the concerns into different files, making the code modular and easy for extentios and reuse.
+
+Lets say you want to alert the text inouted upon clicking on OK button
+
+via inline
+```
+<html>
+  <input type="text" id="employeeName" name="employeeName"/>
+  <input type="submit" value="ok" onClick="alert(document.getElementById('employeeName').value)"/>
+</html>
+```
+
+via function in header
+```
+<html>
+  <head>
+    <script>
+      function showName(){
+        alert(document.getElementById('employeeName').value);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="employeeName" name="employeeName"/>
+    <input type="submit" value="ok" onClick="showName()"/>
+  </body>
+</html>
+```
+
+via function in separate file
+myscripts.js
+```
+  function showName(){
+      function showName(){
+        alert(document.getElementById('employeeName').value);
+  }
+```
+myhtmlfile.html
+
+```
+<html>
+  <head>
+    <script src=myscript.js></script>
+  </head>
+  <body>
+    <input type="text" id="employeeName" name="employeeName"/>
+    <input type="submit" value="ok" onClick="showName()"/>
+  </body>
+</html>
+```
+
+
+
+
