@@ -29,6 +29,7 @@ As an UI developer you need to know
   </body>
 </html>
 ```
+refer input type html element and form element in https://www.w3schools.com/html/html_form_input_types.asp
 
 ### How to use Javascripts in html
 
